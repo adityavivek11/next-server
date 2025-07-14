@@ -62,7 +62,7 @@ export async function POST(request) {
     }
 
     // Step 3: Return the public URL
-    const baseUrl = process.env.R2_PUBLIC_URL || 'https://your-r2-domain.com';
+    const baseUrl = process.env.R2_PUBLIC_URL || 'https://cdn.atulyaayurveda.shop';
     const encodedFilename = encodeURIComponent(file.name);
     const publicUrl = `${baseUrl}/${encodedFilename}`;
 
